@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/style.css" type="text/css" rel="stylesheet">
+    <title>Agregar persona</title>
+</head>
+<body>
+    <form action="/updatePerson" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="<%= `${person.firstName}` %>"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="<%= `${person.lastName}` %>"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" value="<%= `${person.age}` %>"><br><br>
+        <label for="socialNumber">Social Service ID:</label>
+        <input type="number" id="socialNumber" name="socialNumber" value="<%= `${person.socialServiceNumber}` %>"><br><br>
+        <label for="bloodType">Your type of blood:</label>
+        <input type="text" id="bloodType" name="bloodType" value="<%= `${person.bloodType}` %>"><br><br>
+        <label for="objID">ID:</label>
+        <input type="text" name="objID" id="objID" value="<%= `${person._id}` %>"> <BR></BR>
+        <input type="submit" value="Submit">
+    </form>
+    <a href="./index">Back<Agregar persona></a>
+</body>
+</html>
